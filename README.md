@@ -3,12 +3,6 @@
 <br>
 
 
-# Links
-- 🔗 [Youtube Channel](https://www.youtube.com/channel/UC9_kma0SOd-oSe24gqpqqCA)
-- 🔗 [Support Discord](https://discord.com/users/394251966571872256)
-
-
-
 # Images 
 
 ![image](https://user-images.githubusercontent.com/88189918/234342404-b91c51db-200e-415d-acc7-9718620b31be.png)
@@ -24,8 +18,3 @@
 
 # Copyright 
 Copyright 2023 © Sowwyz#1337
-
-</h2>
-<p align="center">
-   RGlzY29yZCA6IFNvd3d5eiMxMzM3
-<br>
