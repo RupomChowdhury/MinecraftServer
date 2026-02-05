@@ -1,96 +1,182 @@
 <!DOCTYPE html>
-<html lang="en" class="sr js anime-ready nlsxuvyh idc0_349">
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nothing Club | Minecraft Server</title>
-<link rel="icon" href="https://techmail.live/src/images/favicon.png" sizes="50x50" type="image/png">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-<link rel="stylesheet" href="index.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
-
-<link href="http://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
-<script src="index.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nothing Club | Minecraft Server</title>
+    <link rel="icon" href="https://techmail.live/src/images/favicon.png" sizes="50x50" type="image/png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+    <script src="index.js"></script>
 </head>
 
-
-
-
 <body>
+    <!-- Animated Background Particles -->
+    <div class="particles-container" id="particles"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <span class="brand-text">NOTHING CLUB</span>
+        </div>
+        <div class="navbar-menu">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#stats" class="nav-link">Stats</a>
+            <a href="https://discord.gg/uqFCwuhXNu" class="nav-link" target="_blank">Discord</a>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
 
-<div class="div1">
-        <center>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-content">
+            <div class="glitch-wrapper">
+                <div class="glitch" data-text="WELCOME TO">WELCOME TO</div>
+            </div>
+            <h1 class="main-title">
+                <span class="title-line">NOTHING</span>
+                <span class="title-line">CLUB</span>
+            </h1>
+            <p class="subtitle">Experience Minecraft Like Never Before</p>
+            
+            <div class="cta-buttons">
+                <button class="btn btn-primary" onclick="location.href='https://discord.gg/uqFCwuhXNu'">
+                    <span>Join Discord</span>
+                    <div class="btn-glow"></div>
+                </button>
+                <button class="btn btn-secondary js-modal-trigger" data-target="modal-js-example">
+                    <span>Start Playing</span>
+                    <div class="btn-glow"></div>
+                </button>
+            </div>
+        </div>
         
-        <div class="div2">
-<br><br>
-                    <p class="a1 is-3">Welcome to,</p> <br>
-                    <p class="a2 is-1">NOTHING CLUB</p>      
- 
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
 
-                    
-        </div2>
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <h2 class="section-title">Server Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Lightning Fast</h3>
+                    <p>High-performance servers with minimal lag and maximum uptime</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Secure & Safe</h3>
+                    <p>Advanced anti-cheat and moderation systems</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Custom World</h3>
+                    <p>Unique custom-built worlds and game modes</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Active Community</h3>
+                    <p>Join thousands of players in an amazing community</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Stats Section -->
+    <section class="stats-section" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="1000">0</div>
+                    <div class="stat-label">Players</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="24">0</div>
+                    <div class="stat-label">Uptime (hrs)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Game Modes</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="99">0</div>
+                    <div class="stat-label">Satisfaction %</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Modal -->
+    <div id="modal-js-example" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <button class="modal-close" aria-label="close">&times;</button>
+            <div class="modal-header">
+                <h2>Connect to Server</h2>
+                <p class="modal-subtitle">Join the adventure now!</p>
+            </div>
+            <div class="modal-body">
+                <div class="server-info">
+                    <div class="edition-badge">Java Edition</div>
+                    <div class="info-row">
+                        <span class="info-label">Hostname:</span>
+                        <div class="info-value">
+                            <span class="server-ip">play.rupom.dev</span>
+                            <button class="copy-btn" onclick="copyText()">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M13 5.5V12.5C13 13.3284 12.3284 14 11.5 14H5.5C4.67157 14 4 13.3284 4 12.5V5.5C4 4.67157 4.67157 4 5.5 4H11.5C12.3284 4 13 4.67157 13 5.5Z" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M3 10.5V3.5C3 2.67157 3.67157 2 4.5 2H10.5C11.3284 2 12 2.67157 12 3.5" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Port:</span>
+                        <div class="info-value">
+                            <span class="server-ip">Not Applicable</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-instructions">
+                    <h3>How to Connect:</h3>
+                    <ol>
+                        <li>Open Minecraft Java Edition</li>
+                        <li>Click "Multiplayer"</li>
+                        <li>Click "Add Server"</li>
+                        <li>Paste the hostname above</li>
+                        <li>Click "Done" and join!</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    </center>
-    
-  
-
-   
-<center style="margin-top: 4%;">
-<section style="margin-top: 20%;"> 
-<button class="button is-link  is-bordered has-shadow" onclick="location.href='https://discord.gg/uqFCwuhXNu'">Join Discord</button>
-<button class="js-modal-trigger button is-primary"  is-bordered has-shadow" data-target="modal-js-example" >Let's Play</button>
-</section>
-<!--
-<img src="https://cdn.discordapp.com/attachments/1035934052672348262/1035976964600762468/pngegg.png">
--->
-</center>
-
-
-    
     <script>
         function copyText() {
-      
-            /* Copy text into clipboard */
-            navigator.clipboard.writeText
-                ("play.rupom.dev");
+            navigator.clipboard.writeText("play.rupom.dev");
+            const btn = event.target.closest('.copy-btn');
+            btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6.5 11.5L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Copied!';
+            setTimeout(() => {
+                btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 5.5V12.5C13 13.3284 12.3284 14 11.5 14H5.5C4.67157 14 4 13.3284 4 12.5V5.5C4 4.67157 4.67157 4 5.5 4H11.5C12.3284 4 13 4.67157 13 5.5Z" stroke="currentColor" stroke-width="1.5"/><path d="M3 10.5V3.5C3 2.67157 3.67157 2 4.5 2H10.5C11.3284 2 12 2.67157 12 3.5" stroke="currentColor" stroke-width="1.5"/></svg> Copy';
+            }, 2000);
         }
-
-        function copyText2() {
-      
-      /* Copy text into clipboard */
-      navigator.clipboard.writeText
-          ("play.rupom.dev");
-
-
-  }
-
     </script>
-
-    <div id="modal-js-example" class="modal is-dark">
-        <div class="modal-background is-dark"></div>
-      
-        <div class="modal-content">
-          <div class="box">
-            <p class="title">Play now on PC using TLauncher !</p>
-            <p class="title has-text-warning-dark is-2">Java Edition</p>
-            <p class="title is-3"><strong class="title has-text-warning-dark">Hostname: </strong> play.rupom.dev    <button class="button is-rounded" onclick="copyText()">Copy</button>            </p> 
-            <!--<br>
-            <p class="title has-text-warning-dark is-2">Bedrock Edition</p>
-            <p>version 1.17.1 and above</p>
-            <p class="title is-3"><strong class="title has-text-warning-dark">IP: </strong> play.redxmail.live    <button class="button is-rounded" onclick="copyText()">Copy</button>            </p>  -->
-            <p class="title is-3"><strong class="title has-text-warning-dark">Port: </strong> N/A    <button class="button is-danger is-rounded" title="Disabled button" disabled="true">Copy</button>            </p> 
-
-        </div>
-        </div>
-      
-        <button class="modal-close is-large" aria-label="close"></button>
-      </div>
 </body>
 </html>
 
